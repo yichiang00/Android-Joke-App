@@ -1,2 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jokeandroidview" />
+    package="com.example.jokeandroidview">
+    <application
+        android:allowBackup="false">
+        <!--This meta-data tag is required to use Google Play Services.-->
+       <activity
+            android:name=".MainActivity"
+           android:label="Joke_VIEW"/>
+        <!--Include the AdActivity configChanges and theme. -->
+        <!--<activity-->
+            <!--android:name="com.google.android.gms.ads.AdActivity"-->
+            <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->
+            <!--android:theme="@android:style/Theme.Translucent" />-->
+    </application>
+</manifest>

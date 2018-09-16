@@ -24,23 +24,30 @@ public class MainActivity extends AppCompatActivity {
     example - https://developer.android.com/guide/components/intents-filters
     static final String ACTION_TIMETRAVEL = "com.example.action.TIMETRAVEL";
      */
-    static final String EXTRA_JOKE = "JOKE_INTENT_VALUE";
+    public static final String EXTRA_JOKE = "JOKE_INTENT_VALUE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-
-    public void displayJoke()
-    {
         TextView jokeTextView = (TextView) findViewById(R.id.joke_text_view);
 
         //get intent -> Set text from extra
-        if(getIntent().hasExtra(EXTRA_JOKE))
+        if(getIntent() != null && getIntent().hasExtra(EXTRA_JOKE))
         {
             jokeTextView.setText(getIntent().getStringExtra(EXTRA_JOKE));
         }
     }
+
+//
+//    public void displayJoke()
+//    {
+//        TextView jokeTextView = (TextView) findViewById(R.id.joke_text_view);
+//
+//        //get intent -> Set text from extra
+//        if(getIntent().hasExtra(EXTRA_JOKE))
+//        {
+//            jokeTextView.setText(getIntent().getStringExtra(EXTRA_JOKE));
+//        }
+//    }
 }

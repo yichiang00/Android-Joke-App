@@ -7,7 +7,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+/*
+*
+* Now you are ready to continue!
 
+Introduce a project dependency
+ between your Java library and your GCE module,
+ and modify the GCE starter code to pull jokes
+ from your Java library. Create an AsyncTask to
+ retrieve jokes using the template included int these instructions.
+
+  Make the button kick off a task to retrieve a joke,
+  then launch the activity from your Android Library to display it.
+* */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -39,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view) {
-        Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
+    public void tellJoke(View view)
+    {
+        //get joke thorugh AsyncTask
+
     }
 
 

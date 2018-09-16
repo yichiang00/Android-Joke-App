@@ -21,7 +21,6 @@ https://github.com/frank-tan/BuildItBigger
 public class JokeAsyncTask extends AsyncTask<Context, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
-
     @Override
     protected String doInBackground(Context... params) {
         context = params[0];

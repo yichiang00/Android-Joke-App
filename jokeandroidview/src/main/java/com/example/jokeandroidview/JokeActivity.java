@@ -16,9 +16,11 @@ For review on how to create an Android library, check out demo 4.03. For a refre
 
 http://developer.android.com/guide/components/intents-filters.html
 
+In both modules you have an activity_main.xml. Please rename one file. I hope it helps you.
 
+https://stackoverflow.com/questions/29440321/nosuchfielderror-no-static-field-listview1-of-type-i-in-class-lcom-disdemo-rid
 * */
-public class MainActivity extends AppCompatActivity {
+public class JokeActivity extends AppCompatActivity {
 
     /*
     example - https://developer.android.com/guide/components/intents-filters
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_joke);
         TextView jokeTextView = (TextView) findViewById(R.id.joke_text_view);
 
         //get intent -> Set text from extra

@@ -4,7 +4,7 @@
         android:allowBackup="false">
         <!--This meta-data tag is required to use Google Play Services.-->
        <activity
-            android:name=".MainActivity"
+            android:name=".JokeActivity"
            android:label="Joke_VIEW"/>
         <!--Include the AdActivity configChanges and theme. -->
         <!--<activity-->
